@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+
+# Next.js
+/.next/
+/out/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Log files
+*.log
+
+# Package lock file
+package-lock.json
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+.vercel
+.env
+.prettierrc.js
+
