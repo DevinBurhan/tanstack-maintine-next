@@ -3,7 +3,9 @@ import { SigninForm } from "@/AppPages/SigninForm/SigninForm";
 const page = () => {
   return (
     <div className="authLayout">
-      <SigninForm />
+      <div>
+        <SigninForm />
+      </div>
     </div>
   );
 };

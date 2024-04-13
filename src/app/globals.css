@@ -82,16 +82,13 @@
 html,
 body {
   max-width: 100vw;
-  min-height: 100vh;
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--background-end-rgb);
+  background: var(--primary-glow);
+  /* background-repeat: no-repeat; */
 }
 
 a {
@@ -103,7 +100,12 @@ a {
   color: red;
 }
 .authLayout {
-  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
 }
 @media (prefers-color-scheme: dark) {
   html {
