@@ -1,6 +1,9 @@
+import "@mantine/core/styles.css";
 import { MaintineProviderWrapper } from "@/providers/MaintineProviderWrapper";
 import TanstackProvider from "@/providers/TanstackProvider";
+import { ColorSchemeScript } from "@mantine/core";
 import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <ColorSchemeScript defaultColorScheme="auto" />
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <TanstackProvider>
           <MaintineProviderWrapper>{children}</MaintineProviderWrapper>

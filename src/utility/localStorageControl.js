@@ -16,7 +16,7 @@ const setItem = (key, value) => {
 };
 
 const removeItem = (key) => {
-  secureLocalStorage.removeItem(key);
+  secureLocalStorage.removeItem(key); // Corrected from localStorage.removeItem(key)
 };
 
 export { getItem, setItem, removeItem };

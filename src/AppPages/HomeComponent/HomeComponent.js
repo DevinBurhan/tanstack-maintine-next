@@ -5,8 +5,8 @@ import { Button } from "@mantine/core";
 import { useState } from "react";
 
 const HomeComponent = () => {
-  const { data: dummyData, isLoading } = useDummyJsonHook();
-  console.log("🚀 ~ HomeComponent ~ dummyData:", dummyData);
+  // const { data: dummyData, isLoading } = useDummyJsonHook();
+  // console.log("🚀 ~ HomeComponent ~ dummyData:", dummyData);
   const [load, setLoad] = useState(false);
 
   return (

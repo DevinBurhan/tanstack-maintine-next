@@ -1,5 +1,3 @@
-import HomeComponent from "@/components/HomeComponent/HomeComponent";
-
 import { getDummyJsonAPI } from "@/state/Dummy/dummy.api";
 import {
   HydrationBoundary,
@@ -7,6 +5,7 @@ import {
   dehydrate,
 } from "@tanstack/react-query";
 import styles from "./page.module.css";
+import HomeComponent from "@/AppPages/HomeComponent/HomeComponent";
 
 export default async function page() {
   // PREFECTH CODE
