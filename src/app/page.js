@@ -6,6 +6,7 @@ import {
 } from "@tanstack/react-query";
 import styles from "./page.module.css";
 import HomeComponent from "@/AppPages/HomeComponent/HomeComponent";
+import { Navbar } from "@/AppPages/Navbar/Navbar";
 
 export default async function page() {
   // PREFECTH CODE
@@ -22,7 +23,8 @@ export default async function page() {
     //   </HydrationBoundary>
     // </main>
     <main>
-      <HomeComponent />
+      {/* <HomeComponent /> */}
+      <Navbar />
     </main>
   );
 }

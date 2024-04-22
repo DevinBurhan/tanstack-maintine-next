@@ -15,6 +15,7 @@ import { useForm } from "@mantine/form";
 import { upperFirst, useToggle } from "@mantine/hooks";
 import { useState } from "react";
 import { GoogleButton } from "../../Components/GoogleButton";
+import { signIn, useSession } from "next-auth/react";
 import { TwitterButton } from "../../Components/TwitterButton";
 
 export function SigninForm(props) {
@@ -38,7 +39,16 @@ export function SigninForm(props) {
     },
   });
 
-  const handleSubmit = (value) => {};
+  const handleSubmit = async (value) => {
+    console.log("🚀 ~ SigninForm ~ value:", value);
+    const response = await signIn("credentials", {
+      email: value.email,
+      password: value.password,
+      redirect: false,
+    });
+    console.log(("response", response));
+  };
+
   return (
     <Paper radius="md" p="xl" withBorder {...props}>
       <Text size="lg" fw={500}>
